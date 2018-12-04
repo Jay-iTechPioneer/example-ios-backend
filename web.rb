@@ -51,7 +51,7 @@ post '/charge' do
   begin
     charge = Stripe::Charge.create(
       :amount => payload[:amount], # this number should be in cents
-      :currency => "usd",
+      :currency => "aud",
       :customer => customer,
       :source => source,
       :description => "Example Charge",
