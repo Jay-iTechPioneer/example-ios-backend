@@ -55,7 +55,6 @@ post '/charge' do
       :customer => customer,
       :source => source,
       :description => "Example Charge",
-      :shipping => payload[:shipping],
       :metadata => {
         :order_id => '5278735C-1F40-407D-933A-286E463E72D8',
       }.merge(payload[:metadata] || {}),
